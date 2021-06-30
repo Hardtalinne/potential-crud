@@ -2,10 +2,8 @@ version: "3"
 services:
   api:
     build:
-      context: ./
+      context: ./api_ts
       dockerfile: Dockerfile
-    volumes:
-      - ./:/usr/src/app
     ports:
       - "3001:3001"
     links:
@@ -23,5 +21,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    volumes:
-      - ./frontend:/src/app
