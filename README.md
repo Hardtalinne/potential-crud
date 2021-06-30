@@ -14,10 +14,16 @@ As seguintes instruções permitirão que você obtenha uma cópia do projeto em
 
 ### Instalação
 
+* Clonar repositório do Github
+
+```
+git clone https://github.com/Hardtalinne/potential-crud
+```
+
 * Baixar imagens e subir o container no Docker
 
 ```
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 * Frontend pode ser acessado na porta
@@ -28,8 +34,26 @@ localhost:3000
 
 ## Demonstração da Interface
 
+****
+* Tela de Cadastro 
+
+![Tela de Cadastro](./assets/telaCadastrar.png)
+
+****
+* Tela de Listagem pág 1
 
 
+![Tela de Cadastro](./assets/telaListagem.png)
+
+****
+* Tela de Listagem pág 2
+
+![Tela de Cadastro](./assets/telaListagem2.png)
+
+****
+* Tela de Busca 
+
+![Tela de Cadastro](./assets/telaBusca.png)
 
 
 ## 🛠️ Construído com
