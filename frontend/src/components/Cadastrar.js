@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Form, Row, Col, Button, Container } from "react-bootstrap";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useHistory, useParams } from "react-router-dom";
 import { getDeveloperById, postDeveloper, putDeveloper } from "../services";
 
@@ -45,7 +45,7 @@ export default function Cadastrar() {
   };
 
   const historyPush = () => {
-    history.push("/home");
+    history.push("/dashboard");
   };
 
   const formateDate = (data) => {

@@ -1,8 +1,8 @@
 // import React, { Component } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { IoIosPeople } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function MenuSuperior() {
   return (
@@ -13,7 +13,7 @@ function MenuSuperior() {
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link>
-            <Link to="/home" style={{ textDecoration: "none", color: "#fff" }}>
+            <Link to="/dashboard" style={{ textDecoration: "none", color: "#fff" }}>
               Listar
             </Link>
           </Nav.Link>
