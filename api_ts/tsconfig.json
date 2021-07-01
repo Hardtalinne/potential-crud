@@ -9,7 +9,7 @@
         ],
         "types": [
             "node",
-            "jest",
+            "@types/jest",
             "mocha"
         ]
     },
@@ -18,8 +18,7 @@
         "*.ts", "__tests__/unit/test.spec.js",
     ],
     "exclude": [
-        "node_modules",
-        "__tests__"
+        "node_modules"
     ],
     "strict": true,
     "esModuleInterop": true,

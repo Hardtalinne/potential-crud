@@ -1,7 +1,6 @@
-import * as express from "express";
-import * as cors from "cors";
 import * as compression from "compression";
-
+import * as cors from "cors";
+import * as express from "express";
 import Database from "./infra/db";
 import developersRouter from "./router/developersRouter";
 
@@ -40,4 +39,4 @@ class StartUp {
   }
 }
 
-export default new StartUp();
+export default new StartUp().app;
