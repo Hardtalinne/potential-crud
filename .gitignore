@@ -127,3 +127,4 @@ sketch
 
 api_ts/node_modules
 frontend/node_modules
+api_ts/globalConfig.json
