@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express = require("express");
-const cors = require("cors");
 const compression = require("compression");
+const cors = require("cors");
+const express = require("express");
 const db_1 = require("./infra/db");
 const developersRouter_1 = require("./router/developersRouter");
 class StartUp {
@@ -32,4 +32,4 @@ class StartUp {
         this.app.use("/", developersRouter_1.default);
     }
 }
-exports.default = new StartUp();
+exports.default = new StartUp().app;
