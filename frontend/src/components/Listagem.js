@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import {
-  Table,
-  Container,
-  Pagination,
-  Button,
-  Row,
-  Form,
-  Col,
+  Button, Col, Container, Form, Pagination, Row, Table
 } from "react-bootstrap";
-import { BsFillTrashFill, BsPencilSquare } from "react-icons/bs";
-import { deleteDeveloper, getCountDevelopers, getDeveloper } from "../services";
 import { BiSearchAlt2 } from "react-icons/bi";
+import { BsFillTrashFill, BsPencilSquare } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { deleteDeveloper, getCountDevelopers, getDeveloper } from "../services";
 
 const Listagem = () => {
   const [listDev, setListDev] = useState([]);
@@ -28,7 +22,6 @@ const Listagem = () => {
   const formateDate = (data) => new Date(data).toLocaleDateString();
 
   const listDevelopers = async (data = "") => {
-    console.log(`query`, data, page, perPage);
     const { response, error } = await getDeveloper(data, page, perPage);
 
     if (error) {

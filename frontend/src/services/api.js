@@ -6,7 +6,6 @@ const api = axios.create({
 
 export async function getDeveloper(query, page, perPage) {
   try {
-    console.log(`query`, query, page, perPage)
     return await api
       .get(`developers?name=${query}&page=${page}&perPage=${perPage}`)
       .then((response) => {
